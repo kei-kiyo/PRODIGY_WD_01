@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #388e3c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2c6b2f;
+            padding: 10px 0;
+            position:fixed;
+            top: 0px;
+            width: 100%;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #76c043;
+            border-radius: 5px;
+        }
+        .main_content {
+            background: url('https://media.istockphoto.com/id/1488944909/photo/environment-concept-green-glass-globe-with-a-tree-in-the-forest-with-sunlight-sustainability.webp?b=1&s=170667a&w=0&k=20&c=f89zMjUr7FldJzgS0p8mJyuTxBWgvhv0kBQL7fcSnjs=') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+        }
+        .main_content h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main_content p {
+            font-size: 1.2em;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #fff;
+            background: #76c043;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #64b42c;
+        }
+        .container {
+            flex: 1;
+        }
+        .features, .about {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .feature, .about-content {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about {
+            text-align: center;
+        }
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .feature img:hover{
+            scale: 1.05;
+            transition: 0.45s;
+        }
+        footer {
+            background: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+  
+         
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    
+
+    <div class="main_content">
+        <h1>Discover the Beauty of Nature</h1>
+        <p>Join us in exploring the wonders of the natural world. From majestic mountains to serene forests, experience the beauty and tranquility of nature.</p>
+        <a href="#about" class="button">Learn More</a>
+    </div>
+
+    <div class="container">
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>At Explore Nature, we are passionate about the environment and committed to raising awareness about the beauty and importance of our natural world. Our mission is to inspire and educate people to appreciate and protect nature through our guided tours, educational programs, and conservation efforts.</p>
+                <p>Whether you're an avid nature lover or new to the outdoors, we offer a range of experiences that will connect you with the natural world in meaningful ways.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="about">
+            <div class="about-content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like more information, please feel free to reach out to us. We would love to hear from you!</p>
+                <p>Email: info@explorenature.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Mountain Adventures</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pI1f_vzn6i4ZuTcfVy-aWurvLxC47R3zRw&s" alt="Mountain Adventure">
+                <p>Experience the thrill of climbing and hiking in some of the most breathtaking mountain ranges. Our guided tours offer unparalleled views and unforgettable experiences.</p>
+            </div>
+            <div class="feature">
+                <h2>Forest Escapes</h2>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/9c/41/46/forest-escapes-holiday.jpg?w=700&h=-1&s=1" alt="Forest Escape">
+                <p>Immerse yourself in the tranquility of lush forests. Enjoy peaceful walks and learn about the diverse flora and fauna that call the forest home.</p>
+            </div>
+            <div class="feature">
+                <h2>Wildlife Safaris</h2>
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202403/explore-9-places-in-india-for-wildlife-adventures-064053825-16x9_0.jpg?VersionId=88Bsos4LDghcSCQOHAG.NFSx5ip0Owhv&size=690:388" alt="Wildlife Safari">
+                <p>Observe wildlife in their natural habitats. Our safaris provide opportunities to see a wide range of animals and understand their behavior and conservation needs.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explore Nature. All rights reserved.</p>
+    </footer>
+</body>
+</html>
